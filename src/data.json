@@ -1,0 +1,74 @@
+[{
+    "keyLookupId": 1347,
+     "lookupkey": "ram(1234)ram@@321",
+     "keyType": "UnderWriter",
+     "fieldId": "123456",
+     "updatedDate": "2019-08-27 07:32:26.0",
+     "companyCode": "L4",
+     "orgCode": "L4",
+     "orgTypeName": "Company",
+     "createdBy": "AP103741",
+     "createdDate": "2019-08-27 07:32:26.0",
+     "gUID": "2941c17c-35fd-4f1b-936a-319c3c2a04fa",
+     "keyData": {
+     "PartyType": {
+     "OrgInfo": {
+     "CompanyName": "ram(1234)ram@@321",
+        "IDInfo": [
+                {
+                    "IDQualifierCode": "FI",
+                    "IDNum": "123"
+                },
+
+                {
+                    "IDQualifierCode": "BAR",
+                    "IDNum": "321"
+                },
+
+                {
+                    "IDQualifierCode": "EPA",
+                    "IDNum": "432"
+                }
+            ],
+        "Communications": [
+                {
+                    "CommQualifier": "AL",
+                    "Address": {
+                        "Address1": "129 Estimate Header Address ashok kumar 1",
+                        "Address2": "129 Estimate Header Address 2 azharuddin1 khan ",
+                        "City": "129 Estimate Header",
+                        "StateProvince": "CA",
+                        "PostalCode": "92129"
+
+                    }
+                },
+                {
+                    "CommQualifier": "UR",
+                    "CommURL": "[http://www.underwriter.com@@@@, www.underwriter.com@@@@]"
+                },
+                {
+                    "CommQualifier": "HP",
+                    "CommPhone": "+999-999-9999"
+                },
+                {
+                    "CommQualifier": "FX",
+                    "CommPhone": "+999-999-9999"
+                },
+                {
+                    "CommQualifier": "EM",
+                    "CommEmail": "test_test1@test.com"
+                },
+                {
+                    "CommQualifier": "LT",
+                    "CommDocUID": "c6581d04-ac18-2d41-5c0e-ae8d69cee967"
+                }
+            ]
+            }
+
+        }
+
+    }
+
+}
+]
+
