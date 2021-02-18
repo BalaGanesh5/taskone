@@ -18,6 +18,7 @@ const customStyles = {
 function App() {
   const [input, setInput] = useState("");
   const [value, setValue] = useState("");
+  const [open, setOpen] = useState(false)
 
   const [modalValues, setModalValues] = useState({
     name: "hey",
@@ -30,14 +31,6 @@ function App() {
 
   console.log(data[0]);
 
-  useEffect(() => {
-    setModalValues({
-      name: data[0].keyData.PartyType.OrgInfo.CompanyName,
-      phoneNumber:
-        data[0].keyData.PartyType.OrgInfo.Communications[2].CommPhone,
-      email: data[0].keyData.PartyType.OrgInfo.Communications[4].CommEmail,
-    });
-  }, [value]);
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -45,13 +38,22 @@ function App() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setValue(input);
+        setValue(input);
+        setOpen(true);
   };
 
   const handleFormChanges = (e) => {
+      e.preventDefault();
     const nam = e.target.name;
     setModalValues({ nam: e.target.value });
   };
+
+
+  //update Handler
+
+  const updateHanlder= () =>{
+      
+  }
 
   return (
     <div className="App">
@@ -65,7 +67,9 @@ function App() {
         <input type="submit" value="submit" />
       </form>
 
-      <Modal isOpen={value ? true : false} style={customStyles}>
+
+
+      <Modal isOpen={open} value={value} style={customStyles}>
         <div classname="modalHader">
           <h1>{value}</h1>
         </div>
@@ -140,10 +144,10 @@ function App() {
         <div>
           <div style={{ display: "flex", justifyContent: "space-around" }}>
             <div>
-              <input type="button" value="Cancel" />
+              <input type="button" value="Cancel" onClick={() => setOpen(false)} />
             </div>
             <div>
-              <input type="submit" value="Submit" />
+              <input type="submit" value="Submit" onClick={updateHanlder}/>
             </div>
           </div>
         </div>
